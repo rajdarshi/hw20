@@ -1,0 +1,392 @@
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color:white;
+    }
+
+/* Global */
+.container {
+    width: 70%;
+    margin: auto;
+    
+
+    }
+
+/* Header */
+header {
+    background:#202020;
+    color: #EDEDED;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: blue 3px solid;
+    transition: 1s;
+
+    }
+
+header a{
+    color: #EDEDED;
+    text-decoration: none;
+    font: 16px;
+
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+
+
+/* Showcase */
+
+#showcase {
+    height: 100vh;
+    background: url('../images/Background.jpg') no-repeat;
+    background-size: cover;
+    text-align: left;
+    color: #303030;
+    overflow: hidden;
+}
+
+#showcase h1{
+    margin-top: 200px;
+    font-size: 55px;
+    margin-bottom: 10px;
+  
+
+}
+
+
+
+
+#showcase p{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    animation: type 9s steps(113);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 12px solid blue;
+    width: 98ch;
+    
+}
+
+
+#showcase p .highlight {
+    color: blue;
+    font-weight: bold;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+
+    }
+
+    100% {
+        width: 113ch;
+    }
+}
+
+
+.arrow-down {
+    width: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.arrow-down::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: auto;
+    top: 640px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: 3s infinite ease;
+    animation: 3s infinite ease;
+
+}
+
+@-webkit-keyframes arrow {
+    0%, 100% {
+        top: 50px;
+    }
+    50% {
+        top: 80px;
+    }
+}
+
+@keyframes arrow {
+    0%, 100% {
+        top: 50px;
+    }
+    50% {
+        top: 80px;
+    }
+}
+
+
+/* project section : Part 1*/
+
+#project1 {
+    min-height: 500px;
+    background: url('../images/section1.jpg') no-repeat;
+    background-position: center;
+    text-align: left;
+    color: #EDEDED;
+    overflow: hidden;
+}
+
+#project1 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 420px;
+    font-weight: bold;
+}
+
+
+#project1 p{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+
+#project2 {
+    min-height: 500px;
+    background: url('../images/section2.jpeg') no-repeat;
+    background-position: center;
+    text-align: left;
+    color: #EDEDED;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+#project2 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 420px;
+    font-weight: bold;
+}
+
+
+#project2 p{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+/* Boxes */
+
+#boxes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+
+
+}
+#boxes .box {
+ float: left;
+ text-align: left;
+ width: 33.3%;
+ padding: 20px;
+ margin-top: 150px;
+
+}
+
+#boxes h1{
+    font-size: 40px;
+}
+
+#boxes .box img {
+    width: 50px;
+    margin-bottom: 40px;
+}
+
+#boxes .box h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#boxes .box p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* project section : Part 2*/
+
+#project3 {
+    min-height: 500px;
+    background: url('../images/section3.jpeg') no-repeat;
+    background-position: center;
+    text-align: left;
+    color: #EDEDED;
+    overflow: hidden;
+}
+
+#project3 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 420px;
+    font-weight: bold;
+}
+
+
+#project3 p{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+
+#project4 {
+    min-height: 500px;
+    background: url('../images/section4.jpeg') no-repeat;
+    background-position: center;
+    text-align: left;
+    color: #EDEDED;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+#project4 h2{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 420px;
+    font-weight: bold;
+}
+
+
+#project4 p{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+/* About me */
+
+
+#about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+}
+#about .box {
+ float: left;
+ text-align: left;
+ width: 100%;
+ padding: 10px;
+ margin-top: 70px;
+
+}
+
+#about h1{
+    font-size: 40px;
+}
+
+#about .box img {
+    width: 50px;
+}
+
+#about .box h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#about .box p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Mosaic */
+
+
+.cards {
+    margin:auto;
+    max-width: 1090px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+
+}
+
+
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+}
+
+.card__image{
+    width: 100%;
+    display: block;
+}
+
+.card__content{
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    background: #fafafa;
+
+}
+
+/* footer */
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #EDEDED;
+    background-color: #151515;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* media quries */
+
+@media (max-width: 768px) {
+    header #branding, header nav, header li, #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 100px;
+        font-size: 45px;
+    }
+
+    
+}
